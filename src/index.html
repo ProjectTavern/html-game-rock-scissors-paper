@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+  <title>Rock, Scissors, Paper! Game</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./resources/css/stylesheet.css">
+  <script src="./resources/js/minified.js" defer></script>
+</head>
+<body>
+<div id="game">
+  <div class="board">
+    <strong class="title_game">도전! 가위, 바위, 보!</strong>
+    <div class="panel_computer">
+      <img src="./resources/images/rock.png" class="item_computer">
+    </div>
+    <button class="btn_start">시작</button>
+    <div class="panel_player">
+      <button id="rock" class="btn_item" value="0">주먹</button>
+      <button id="scissors" class="btn_item" value="1">가위</button>
+      <button id="paper" class="btn_item" value="2">보</button>
+    </div>
+  </div>
+  <div class="score">
+    <strong class="title_score">점수판</strong>
+    <ul class="panel_score">
+      <li class="victory">
+        <strong>승리</strong>
+        <span class="txt_score">0</span>
+      </li>
+      <li class="defeat">
+        <strong>패배</strong>
+        <span class="txt_score">0</span>
+      </li>
+      <li class="draw">
+        <strong>무승부</strong>
+        <span class="txt_score">0</span>
+      </li>
+    </ul>
+    <button class="btn_reset">점수 초기화</button>
+  </div>
+</div>
+</body>

@@ -27,7 +27,6 @@ export default class GameRSP {
 
   checkWinner() {
     let result = {};
-    console.log(this.userChoice, this.computerChoice);
     if (this.userChoice === this.computerChoice) {
       result.result = 'draw';
       this.score.draw += 1;

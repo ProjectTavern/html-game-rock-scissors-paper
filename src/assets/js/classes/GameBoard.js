@@ -19,7 +19,7 @@ export default class GameBoard {
 
     this.init();
   }
-
+  // ctrl + G
   init() {
     this.itemCounter = 0;
     this.intervalTimer = 100;

@@ -9,14 +9,12 @@ export default class ScoreBoard {
   }
 
   cutEvent() {
-    this.template.$btnResetScore.off('click', resetScore);
+    this.template.$btnResetScore.off('click', () => this.resetScore);
   }
 
   resetScore() {
     this.template.$btnResetScore.css({'background': '#000', 'color': '#fff'});
-    this.template.$victoryPanel.html(0);
-    this.template.$defeatPanel.html(0);
-    this.template.$drawPanel.html(0);
+    this.setScore({ draw: 0, win: 0, lose: 0 });
     setTimeout(function() {
       this.template.$btnResetScore.css({'background': '#fff', 'color': '#000'});
     }, 100);

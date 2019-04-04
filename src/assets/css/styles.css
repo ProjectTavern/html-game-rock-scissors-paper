@@ -3,6 +3,7 @@
   clear: both;
   content: '';
 }
+
 #game .board {
   float: left;
   width: 500px;
